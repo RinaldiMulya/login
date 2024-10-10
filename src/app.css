@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f9fa; 
+}
+
+.container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh; 
+  margin-left: -30px;
+}
+
+.card {
+  width: 400px; 
+  border: none;
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan card */
+}
+
+.card-header {
+  background-color: #ffffff; /* Warna latar belakang header */
+  border-bottom: 1px solid #e5e5e5; /* Garis bawah header */
+  text-align: center; /* Teks di tengah */
+  padding: 20px; /* Padding header */
+}
+
+h3 {
+  margin: 0; /* Menghapus margin default */
+  font-size: 28px; /* Ukuran font judul */
+  color: #333; /* Warna teks judul */
+}
+
+.form-label {
+  font-weight: bold; 
+}
+
+.form-control {
+  border-radius: 5px; /* Sudut melengkung untuk input */
+  border: 1px solid #ced4da; /* Border input */
+}
+
+input:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.btn {
+  background-color: #007bff;  
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px; 
+  font-size: 16px;
+  margin-top: 10px; 
+ 
+}
+
+.btn:hover {
+  background-color: #0056b3; 
+}
+
+.alert {
+  margin-top: 10px;
+  text-align: center; 
+}
