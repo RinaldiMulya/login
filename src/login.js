@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './app.css';
-// import cors from 'cors';
-// import createProxyMiddleware from http-proxy-middleware;
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -15,12 +13,14 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('users/login', {
+      // Akses API melalui proxy
+      const response = await axios.post('/users/login', {  
         username,
         password,
       });
 
       if (response.status === 200) {
+        // Simpan token ke localStorage dan arahkan ke dashboard
         localStorage.setItem('token', response.data.token);
         navigate('/dashboard');
       }
